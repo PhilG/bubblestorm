@@ -6,7 +6,9 @@ Bubblestorm is an experimental tool which uses open-source libraries to generate
 Changelog
 ---------
 ### 0.0.0 ###
-Rewriting Readme
+* Sizing experiments
+* Implementing intelligent (percentage based) scrolling
+* Rewriting Readme
 
 License
 ---------
