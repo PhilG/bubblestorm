@@ -2,6 +2,8 @@ Bubblestorm
 ===========
 Bubblestorm is an experimental tool which uses open-source libraries to generate a preview of text in [Markdown](http://daringfireball.net/projects/markdown/). 
 
+![Bubblestorm Logo](media/bubblestorm-min.png)
+
 Origin
 ------
 This project was created in context of [lazyweb-request #61](https://github.com/h5bp/lazyweb-requests/issues/61).
