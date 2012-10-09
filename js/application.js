@@ -33,7 +33,7 @@ $(document).ready(function() {
 		var pageHeight = $(window).height();
 		var footerHeight = $(".footer").outerHeight(true);
 		var headerHeight = $(".page-header").outerHeight(true);
-		console.log(pageHeight, footerHeight);
+		// console.log(pageHeight, footerHeight);
 		myCodeMirror.setSize(null, pageHeight - footerHeight - headerHeight - 3);
 		myCodeMirror.refresh();
 	  }           
