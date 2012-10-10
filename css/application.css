@@ -1,3 +1,6 @@
+body {
+    overflow: hidden;
+}
 #output {
   overflow: auto;
   max-height: 800px;
