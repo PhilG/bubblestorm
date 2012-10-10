@@ -60,8 +60,6 @@ var modes = [base + "clike/clike.js",
 
 LazyLoad.js(modes);
 
-// Load application
-LazyLoad.js("js/application.js");
 
 
 
@@ -80,4 +78,7 @@ LazyLoad.css("vendor/codemirror/lib/codemirror.css");
 
 LazyLoad.css("css/codemirror/theme/bubblestorm.css");
 
-LazyLoad.css("css/application.css");
+LazyLoad.css("css/application.css", function() {
+    // Load application
+    LazyLoad.js("js/application.js");
+});
