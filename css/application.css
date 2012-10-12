@@ -3,6 +3,7 @@ body {
 }
 #output {
   overflow: auto;
+  padding-right: 14px;
 }
 .footer {
   margin-top: 30px;
