@@ -14,7 +14,7 @@ $(document).ready(function() {
             $output.html(marked(myCodeMirror.getValue()));
             Rainbow.color();
 
-            resizeCodeMirror();
+            resizeContent();
         },
 
         onScroll: function () {
@@ -27,18 +27,20 @@ $(document).ready(function() {
         },
     });
       
-    function resizeCodeMirror() {
+    function resizeContent() {
         var pageHeight = $(window).height();
         var footerHeight = $(".footer").outerHeight(true);
         var headerHeight = $(".page-header").outerHeight(true);
         // console.log(pageHeight, footerHeight);
-        myCodeMirror.setSize(null, pageHeight - footerHeight - headerHeight - 3);
+        myCodeMirror.setSize(null, pageHeight - footerHeight - headerHeight);
         myCodeMirror.refresh();
+
+        $output.css("height", pageHeight - footerHeight - headerHeight);
     }
         
     $(window).resize(function() {
-        resizeCodeMirror();
+        resizeContent();
     });
 
-    resizeCodeMirror(); 
+    resizeContent(); 
 });
