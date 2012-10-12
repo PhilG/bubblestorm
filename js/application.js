@@ -20,9 +20,9 @@ $(document).ready(function() {
         onScroll: function () {
             var scrolled = $(".CodeMirror-scroll").scrollTop() / ($(".CodeMirror-scroll")[0].scrollHeight - $(".CodeMirror-scroll").height()) * 100;
 
-            var toScroll = scrolled * ($("#output")[0].scrollHeight - $("#output").height()) / 100 ;
+            var toScroll = scrolled * ($output[0].scrollHeight - $output.height()) / 100 ;
 
-            $('#output').scrollTop(toScroll);
+            $output.scrollTop(toScroll);
 
         },
     });
